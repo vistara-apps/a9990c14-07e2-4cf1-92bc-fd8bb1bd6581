@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --tw-bg: hsl(220 14% 96%);
+  --tw-accent: hsl(262 61% 44%);
+  --tw-primary: hsl(204 70% 53%);
+  --tw-surface: hsl(0 0% 100%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--tw-bg);
+  color: rgb(51 65 85);
+}
+
+@layer components {
+  .poll-card {
+    @apply bg-surface rounded-lg p-4 shadow-card transition-all duration-200 hover:shadow-lg;
+  }
+  
+  .vote-button {
+    @apply px-4 py-2 rounded-md font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/50;
+  }
+  
+  .vote-button-default {
+    @apply bg-gray-100 text-gray-700 hover:bg-gray-200;
+  }
+  
+  .vote-button-selected {
+    @apply bg-primary text-white hover:bg-primary/90;
+  }
+  
+  .sidebar-item {
+    @apply flex items-center gap-3 px-4 py-2 rounded-md text-gray-300 hover:text-white hover:bg-gray-700 transition-colors duration-200;
+  }
+  
+  .sidebar-item-active {
+    @apply bg-accent text-white;
+  }
+}
