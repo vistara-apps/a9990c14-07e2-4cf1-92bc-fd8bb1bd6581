@@ -38,7 +38,7 @@ export function PollCard({ poll, variant = 'active', onVote }: PollCardProps) {
   };
 
   return (
-    <div className="poll-card animate-fade-in">
+    <div className="poll-card">
       {/* Header */}
       <div className="flex items-center gap-3 mb-3">
         <div className={`w-10 h-10 rounded-full bg-gradient-to-r ${getCardColor()} flex items-center justify-center text-white font-bold text-sm`}>
@@ -98,7 +98,7 @@ export function PollCard({ poll, variant = 'active', onVote }: PollCardProps) {
         </div>
         <div className="flex items-center gap-2">
           {hasVoted && <span className="text-green-600">✓ Voted</span>}
-          <button className="text-primary hover:text-primary/80 transition-colors">
+          <button className="text-blue-600 hover:text-blue-700 transition-colors">
             Share
           </button>
         </div>

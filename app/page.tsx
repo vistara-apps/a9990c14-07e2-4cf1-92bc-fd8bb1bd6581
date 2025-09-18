@@ -41,7 +41,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen bg-background flex">
+    <div className="min-h-screen bg-gray-50 flex">
       {/* Left Sidebar */}
       <Sidebar />
       
@@ -103,10 +103,10 @@ export default function HomePage() {
 
               {/* Action Buttons */}
               <div className="flex gap-4 pt-6">
-                <button className="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors duration-200 font-medium">
+                <button className="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors duration-200 font-medium">
                   Create New Poll
                 </button>
-                <button className="bg-accent text-white px-6 py-3 rounded-md hover:bg-accent/90 transition-colors duration-200 font-medium">
+                <button className="bg-purple-600 text-white px-6 py-3 rounded-md hover:bg-purple-700 transition-colors duration-200 font-medium">
                   View Analytics
                 </button>
                 <button className="border border-gray-300 text-gray-700 px-6 py-3 rounded-md hover:bg-gray-50 transition-colors duration-200 font-medium">
