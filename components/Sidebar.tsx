@@ -35,7 +35,7 @@ export function Sidebar({ className = '' }: SidebarProps) {
           <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
           <div className="w-3 h-3 bg-green-500 rounded-full"></div>
         </div>
-        <div className="mt-4 bg-accent rounded-full px-3 py-1 text-sm font-medium">
+        <div className="mt-4 bg-purple-600 rounded-full px-3 py-1 text-sm font-medium">
           Dashboard
         </div>
       </div>
