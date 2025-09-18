@@ -3,10 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --tw-bg: hsl(220 14% 96%);
-  --tw-accent: hsl(262 61% 44%);
-  --tw-primary: hsl(204 70% 53%);
-  --tw-surface: hsl(0 0% 100%);
+  --background: hsl(220 14% 96%);
+  --foreground: hsl(0 0% 0%);
+  --primary: hsl(204 70% 53%);
+  --accent: hsl(262 61% 44%);
+  --surface: hsl(0 0% 100%);
+  --muted: hsl(220 14% 94%);
+  --muted-foreground: hsl(220 14% 46%);
+  --border: hsl(220 14% 90%);
+  --input: hsl(220 14% 96%);
+  --ring: hsl(204 70% 53%);
+  --radius: 16px;
+  --shadow-card: 0 4px 12px hsla(0,0%,0%,0.08);
 }
 
 * {

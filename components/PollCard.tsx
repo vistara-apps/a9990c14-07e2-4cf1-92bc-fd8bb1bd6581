@@ -8,9 +8,10 @@ interface PollCardProps {
   poll: Poll;
   variant?: 'active' | 'completed';
   onVote?: (pollId: string, optionId: string) => void;
+  onViewAnalytics?: (poll: Poll) => void;
 }
 
-export function PollCard({ poll, variant = 'active', onVote }: PollCardProps) {
+export function PollCard({ poll, variant = 'active', onVote, onViewAnalytics }: PollCardProps) {
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [hasVoted, setHasVoted] = useState(false);
 
@@ -98,7 +99,13 @@ export function PollCard({ poll, variant = 'active', onVote }: PollCardProps) {
         </div>
         <div className="flex items-center gap-2">
           {hasVoted && <span className="text-green-600">✓ Voted</span>}
-          <button className="text-primary hover:text-primary/80 transition-colors">
+          <button
+            onClick={() => onViewAnalytics?.(poll)}
+            className="text-primary hover:text-primary/80 transition-colors"
+          >
+            📊
+          </button>
+          <button className="text-gray-600 hover:text-gray-800 transition-colors">
             Share
           </button>
         </div>
