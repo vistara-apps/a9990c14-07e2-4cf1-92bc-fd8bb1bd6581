@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 interface SidebarProps {
   className?: string;
+  onNavigate?: (section: string) => void;
 }
 
 const sidebarItems = [
@@ -23,7 +24,7 @@ const bottomItems = [
   { id: 'control', label: 'Control Panel', icon: '⚙️' }
 ];
 
-export function Sidebar({ className = '' }: SidebarProps) {
+export function Sidebar({ className = '', onNavigate }: SidebarProps) {
   const [activeItem, setActiveItem] = useState('dashboard');
 
   return (
@@ -45,7 +46,10 @@ export function Sidebar({ className = '' }: SidebarProps) {
         {sidebarItems.map((item) => (
           <button
             key={item.id}
-            onClick={() => setActiveItem(item.id)}
+            onClick={() => {
+              setActiveItem(item.id);
+              onNavigate?.(item.id);
+            }}
             className={`sidebar-item w-full text-left ${
               activeItem === item.id ? 'sidebar-item-active' : ''
             }`}
@@ -61,7 +65,10 @@ export function Sidebar({ className = '' }: SidebarProps) {
         {bottomItems.map((item) => (
           <button
             key={item.id}
-            onClick={() => setActiveItem(item.id)}
+            onClick={() => {
+              setActiveItem(item.id);
+              onNavigate?.(item.id);
+            }}
             className={`sidebar-item w-full text-left ${
               activeItem === item.id ? 'sidebar-item-active' : ''
             }`}

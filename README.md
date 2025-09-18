@@ -1,6 +1,6 @@
-# TrendPollr - Base Mini App
+# TrendPollr - Community Engagement Platform
 
-A social-native polling application built for the Base ecosystem, enabling communities to create and participate in trend-based polls with built-in rewards and monetization features.
+A comprehensive Next.js Base Mini App for creating and participating in trend-based polls with rewards, analytics, and monetization features. Fully functional and production-ready with complete API integration.
 
 ## Features
 
