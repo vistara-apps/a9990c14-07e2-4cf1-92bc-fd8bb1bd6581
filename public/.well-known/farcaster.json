@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "TrendPollr",
+    "subtitle": "Built with Zara",
+    "description": "TrendPollr is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://a9990c1407e24cf192bcfd8bb1bd6581-jq0m.vercel.app",
+    "splashImageUrl": "https://a9990c1407e24cf192bcfd8bb1bd6581-jq0m.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://a9990c1407e24cf192bcfd8bb1bd6581-jq0m.vercel.app/image.png",
+    "tagline": "TrendPollr",
+    "screenshotUrls": [
+      "https://a9990c1407e24cf192bcfd8bb1bd6581-jq0m.vercel.app/screenshot.png",
+      "https://a9990c1407e24cf192bcfd8bb1bd6581-jq0m.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://a9990c1407e24cf192bcfd8bb1bd6581-jq0m.vercel.app/api/webhook"
+  }
+}
